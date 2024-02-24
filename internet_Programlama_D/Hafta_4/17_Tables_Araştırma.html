@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 3px solid red;
+        
+        }
+        table ,th ,td,tr{
+            border-collapse: collapse;
+
+        }
+        th{
+            text-align: right;
+            font-weight: 100;
+            border: 1px solid red;
+        }
+        td{
+            padding: 5px;
+            padding-right: 40px;
+            height: 40px;
+            border: 1px solid red;
+        }
+        .ilk{
+            border-bottom: 4px dotted red;
+            border-right: 4px dotted red;
+            border-collapse: collapse;
+
+        }
+        .son{
+            border-right: 4px dotted red;
+            border-collapse: collapse;
+        }
+        .size{
+            font-weight: bold;
+        }
+        tr:hover{
+            background-color: slategrey;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th class="ilk size">Sonbahar</th>
+            <th class="size">Kış</th>
+            <th class="size">ilkbahar</th>
+            <th class="size">Yaz</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr class="size">
+                <td class="ilk">Eylül</td>
+                <td>Aralık</td>
+                <td>Haziran</td>
+                <td>Temmuz</td>
+            </tr>
+            <tr>
+                <td class="ilk">Eylül</td>
+                <td>Aralık</td>
+                <td>Haziran</td>
+                <td>Temmuz</td>
+            </tr>
+            <tr>
+                <td class="son">Eylül</td>
+                <td>Aralık</td>
+                <td style="background-color: black;color: fuchsia;">Haziran</td>
+                <td>Temmuz</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

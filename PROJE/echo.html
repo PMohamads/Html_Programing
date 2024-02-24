@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADISIZ</title>
+    <link rel="website icon" type="png"  href="C:\Users\SkyLine\Desktop\internet_Programlama\PROJE\web.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        background-image: url("health.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-color .5s;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+
+        li {
+        float: left;
+        border-right:2px solid #bbb;
+        margin-top: 5px;
+        }
+
+        li:last-child {
+        border-right: none;
+        }
+        li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        }
+        .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+        .btn:hover {
+        background-color: RoyalBlue;
+        }
+        .btn:active {
+        background-color: goldenrod;
+        }
+
+        .sidenav {
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-end-end-radius: 40px;
+        height: 40%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: aqua;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 80px;
+        }
+        .sidenav .nn{
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 18px 25px;
+        margin: 10px 70px 10px 70px;/*top right bottom left*/
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+        .sidenav .nn:hover {
+        color: #f1f1f1;
+        }
+        #closebtn{
+        border: 1px solid black;
+        height: 42px;
+        border-radius:50%;
+        width: 40px;
+        cursor: pointer;
+        margin: 5px 20px 0px 40px;
+        position: absolute;
+        padding:0px 0px 0px 0px;
+        top: 0px;
+        right: 0px;
+        font-size: 40px;
+        }
+        #main {
+        transition: margin-right .5s;
+        padding: 16px;
+        }
+</style>
+<body id="main">
+    <ul>
+        <li style="margin-left:100px ;"><a href="#TR">TR</a></li>
+        <li><a href="#EN">EN</a></li>
+        <li><a href="#AR">AR</a></li>
+        <li style="float:right; "><a href="#about"><button onclick="openNav()"  class="btn"><i class="fa fa-bars"></i></button></a></li>
+      </ul>
+      <div id="mySidenav" class="sidenav">
+        <a class="nn" href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nn" href="#">About</a>
+        <a class="nn" href="#">Services</a>
+        <a class="nn" href="#">Clients</a>
+        <a class="nn" href="#">Contact</a>
+      </div>
+      <h1 onclick="closeNav()" style="text-align: center;cursor: move;">Welcome to TrueHealth</h1>
+
+
+    
+</body>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+      document.getElementById("main").style.marginRight = "350px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginRight= "0";
+      document.body.style.backgroundColor = "white";
+    }
+</script>
+       
+</html>

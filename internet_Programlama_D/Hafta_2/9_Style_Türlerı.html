@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--
+        External (Sayfa dışı) CSS ekleme
+        HTML dosyasına css dosyaları href kullanarak dahil edilerek kullanılır.
+        href hypertext reference Demektır
+    -->
+    <link rel="stylesheet" href="css_Dosyası.css">
+
+    <title>Document</title>
+    <!--
+        Internal (Sayfa içi) CSS ekleme
+        HTML dosyasında style etiketi kullanılarak eklenir.
+    -->
+    <style>
+        h2{
+            color:brown;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Inline (Satır içi) CSS ekleme
+        HTML etiketlerinin style özelliği kullanarak eklenir.
+    -->
+    <h1 style="color:blue">Inline Style kullanarak </h1>
+    <h2 style="color:blue">Internal Style Inline style tarafından Ezerek kullandık</h2> <!--Sonradan yazılan öncekini ezer-->
+    <h2>Internal Style kullanarak</h2>
+    <h3>External Style kullanarak</h3>
+</body>
+</html>

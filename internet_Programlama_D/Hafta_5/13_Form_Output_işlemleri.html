@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>output attribute javascripti kullanmadan basit matematik işlemlerın sonuçu gösterir </p>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" min="1" max="250" value="5" id="a">+
+        <input type="number" value="22" id="b">=
+        <output name="x" for="a b"></output>
+    </form>
+    <form oninput="x.value=parseInt(a.value)-parseInt(b.value)">
+        <input type="range" min="1" max="250" value="5" id="a">-
+        <input type="number" value="22" id="b">=
+        <output name="x" for="a b"></output>
+    </form>
+    <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+        <input type="range" min="1" max="250" value="5" id="a">*
+        <input type="number" value="22" id="b">=
+        <output name="x" for="a b"></output>
+    </form>
+    <form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+        <input type="range" min="1" max="250" value="5" id="a">/
+        <input type="number" value="22" id="b">=
+        <output name="x" for="a b"></output>
+    </form>
+    
+</body>
+</html>

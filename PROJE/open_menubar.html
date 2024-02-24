@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* ------------------------------------------------------------------- */
+/* Navigation Section
+---------------------------------------------------------------------- */
+
+.menu-button {
+    padding-top:25px;
+    padding-right:30px;
+    float:right;
+}
+
+.menu-button a {
+    color:gold;
+}
+
+.menu-button a:hover {
+    color:#940002;
+}
+
+#main_nav {
+    display:none;
+    position: absolute;
+    padding-left: 1400px;
+    padding-top: 10px;
+}
+
+#main_nav ul {
+    list-style-type:none;
+}
+
+#main_nav li {
+    display:inline;
+    margin:0 10px;
+}
+
+#main_nav a {
+    text-decoration:none;
+    color: black;
+}
+
+
+.with_nav #main_nav {
+    display: block;
+}
+
+
+#main_nav:target {
+    display: block;
+}
+</style>
+<body>
+    <div class="menu-button">
+        <a href="#main_nav" id="access_nav"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <nav id="main_nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+<!-- JavaScript
+================================================== -->
+<script src="https://use.fontawesome.com/430ad8b17b.js"></script>
+<script>
+var nav = document.getElementById('access_nav'),
+    body = document.body;
+
+nav.addEventListener('click', function(e) {
+    body.className = body.className? '' : 'with_nav';
+    e.preventDefault();
+}); 
+</script>
+</html>

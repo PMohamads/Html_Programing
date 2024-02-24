@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medisam</title>
+  <!-- çerezler -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.medisammedikal.com/css/cerezler.css">
+  <!-- custom css -->
+  <!-- <link rel="stylesheet" href="./css/scroller.css">  -->
+  <link rel="stylesheet" href="https://www.medisammedikal.com/css/style.css" />
+  <link rel="stylesheet" href="https://www.medisammedikal.com/css/index.css" />
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+  <script src="https://www.medisammedikal.com/js/main.js"></script>
+
+  <style>
+    @media only screen and (max-width: 600px) {
+
+      html {
+        overflow-x: hidden;
+      }
+
+      .Hizmetlerimiz {
+        margin-top: 250% !important;
+      }
+
+      .hizmetlerimizBaslik {
+        margin-left: 25% !important;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: 100%;
+      }
+
+      .lineArea2 {
+        display: none;
+      }
+
+      .lineAreaYuksekCozunurluk {
+        display: none;
+      }
+
+      #switchImgObject {
+        margin-top: -30% !important;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://www.medisammedikal.com/css/wp_contact.css">
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=905340380452" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <!-- google translate element -->
+  <li style="display: none" id="google_translate_element2"></li>
+  <!-- sidebar -->
+  <div class="sidebar" id="sidebarElement">
+    <button class="menuBtn" onclick="close_menu()" id="closeMenuBtn"
+      style="margin-top: 0%; margin-right: 4%; color: white">
+      <i class="bi bi-x-circle"></i>
+    </button>
+    <ul class="menu-select">
+      <li class="menu-item">
+        <a class="menu-item-link" href="about.html"> HAKKIMIZDA </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item-link" href="product.html"> ÜRÜNLERİMİZ </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item-link" href="services.html"> HİZMETLERİMİZ </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item-link" href="contact.html"> İLETİŞİM </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item-link" target="_blank" href="e-katalog/Medisam Broşür ESP.pdf"> E-KATALOG </a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="blurEfect">
+    <!-- ===== HEADER TOP ===== -->
+    <header>
+      <div class="header-top">
+        <div class="language">
+          <a href="#" class="nturl language-select active"
+            onclick="doGTranslate('tr|tr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="Türkçe">TR</a>
+          <a href="#" class="nturl language-select"
+            onclick="doGTranslate('tr|en');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="English">ENG</a>
+          <a href="#" class="nturl language-select"
+            onclick="doGTranslate('tr|de');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="Deutsch">DEU</a>
+          <a href="#" class="nturl language-select"
+            onclick="doGTranslate('tr|fr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="French">FRA</a>
+          <a href="#" class="nturl language-select"
+            onclick="doGTranslate('tr|ru');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="Russia">RU</a>
+          <a href="#" class="nturl language-select"
+            onclick="doGTranslate('tr|es');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="SPAIN">ES</a>
+          <a href="#" class="nturl language-select special"
+            onclick="doGTranslate('tr|ar');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;"
+            title="Arabic">ARB</a>
+        </div>
+        <div class="menu-bars">
+          <button class="menuBtn" onclick="open_menu()" id="menuOpenBtn">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="close_menuElement" onclick="close_menu()">
+      <div class="header-content">
+        <div class="header-title">
+          <p>
+            Kendi Oksijeninizi
+            <span>Kendiniz Üretin.</span>
+          </p>
+        </div>
+      </div>
+
+
+      <svg class="lineAreaYuksekCozunurluk" fill="none">
+        <path id="svgPathYuksekCozunurluk"
+          d="M647.305 35V193.826C647.305 234 563.725 226.84 515.789 280.5C482.289 318 521.54 369.875 633.789 409.5C725.54 441.889 821.556 468.5 739.055 551.994C720.179 571.098 665.895 591.224 621.554 611.5C515.864 667.258 470.56 584.652 497.554 544.152C516.554 515.645 591.791 498.857 623.376 616.569C639.777 698.798 633.789 707.685 633.789 808.5L619.819 1445.92C617.891 1463.05 594.828 1503.61 591.184 1508.11C509.79 1621.88 394.383 1574.01 394.383 1535.71C394.383 1470.38 534.694 1485.59 594.828 1509.8C619.125 1516.94 668.933 1533.46 675.007 1536.28C730.889 1565 781.304 1572.32 781.304 1536.28C779.482 1504.74 724.936 1495.16 669.54 1537.96C647.673 1552.61 614.266 1587.53 602.725 1602.17C540.161 1675.39 490.354 1711.97 398.635 1714.22H47.6457C20.311 1715.91 0.266314 1731.68 3.3046 1780.68L3.30435 3280C14.844 3478.25 258.986 3652.55 407.802 3648.61C571.804 3648.61 669.426 3588.72 716.804 3706.43"
+          stroke="#61BB79" stroke-width="6" />
+        <path
+          d="M639.625 13.319L647.5 25.75L655.375 13.319H639.625ZM630 17.7586C630 15.302 630.46 12.9934 631.379 10.8328C632.297 8.67213 633.544 6.79267 635.119 5.1944C636.694 3.59612 638.546 2.33112 640.675 1.39938C642.804 0.46646 645.079 0 647.5 0C649.921 0 652.196 0.46646 654.325 1.39938C656.454 2.33112 658.306 3.59612 659.881 5.1944C661.456 6.79267 662.703 8.67213 663.623 10.8328C664.541 12.9934 665 15.302 665 17.7586C665 20.2152 664.541 22.5239 663.623 24.6845C662.703 26.8451 661.456 28.7246 659.881 30.3228C658.306 31.9211 656.454 33.1861 654.325 34.1179C652.196 35.0508 649.921 35.5172 647.5 35.5172C645.079 35.5172 642.804 35.0508 640.675 34.1179C638.546 33.1861 636.694 31.9211 635.119 30.3228C633.544 28.7246 632.297 26.8451 631.379 24.6845C630.46 22.5239 630 20.2152 630 17.7586ZM633.5 17.7586C633.5 21.7247 634.856 25.0841 637.569 27.8366C640.281 30.5892 643.592 31.9655 647.5 31.9655C651.408 31.9655 654.719 30.5892 657.431 27.8366C660.144 25.0841 661.5 21.7247 661.5 17.7586C661.5 13.7925 660.144 10.4332 657.431 7.6806C654.719 4.92802 651.408 3.55172 647.5 3.55172C643.592 3.55172 640.281 4.92802 637.569 7.6806C634.856 10.4332 633.5 13.7925 633.5 17.7586Z"
+          fill="#61BB79" />
+        <path
+          d="M725 3706C725 3710.97 720.747 3715 715.5 3715C710.253 3715 706 3710.97 706 3706C706 3701.03 710.253 3697 715.5 3697C720.747 3697 725 3701.03 725 3706Z"
+          fill="#D9D9D9" />
+      </svg>
+
+      <svg class="lineArea2" fill="none">
+        <path id="svgPath"
+          d="M648 33V191.826C648 232 564.42 224.84 516.484 278.5C482.984 316 522.235 367.875 634.484 407.5C726.235 439.889 822.251 466.5 739.75 549.994C720.874 569.098 666.59 589.224 622.249 609.5C516.559 665.258 471.256 582.652 498.249 542.152C517.249 513.645 592.486 496.857 624.071 614.569C640.472 696.798 634.484 705.685 634.484 806.5L620.514 1443.92C618.586 1461.05 595.523 1501.61 591.879 1506.11C510.485 1619.88 395.078 1572.01 395.078 1533.71C395.078 1468.38 535.389 1483.59 595.523 1507.8C619.82 1514.94 669.628 1531.46 675.702 1534.28C731.584 1563 781.999 1570.32 781.999 1534.28C780.177 1502.74 725.631 1493.16 670.235 1535.96C648.368 1550.61 614.961 1585.53 603.42 1600.17C540.856 1673.39 491.05 1709.97 399.33 1712.22H48.3411C21.0063 1713.91 0.961627 1729.68 3.99991 1778.68V2893.57C15.5396 3091.82 237.681 3266.12 386.498 3262.18C550.499 3262.18 648.122 3202.29 695.5 3320"
+          stroke="#61BB79" stroke-width="6" />
+        <path
+          d="M639.625 13.319L647.5 25.75L655.375 13.319H639.625ZM630 17.7586C630 15.302 630.46 12.9934 631.379 10.8328C632.297 8.67213 633.544 6.79267 635.119 5.1944C636.694 3.59612 638.546 2.33112 640.675 1.39938C642.804 0.46646 645.079 0 647.5 0C649.921 0 652.196 0.46646 654.325 1.39938C656.454 2.33112 658.306 3.59612 659.881 5.1944C661.456 6.79267 662.703 8.67213 663.623 10.8328C664.541 12.9934 665 15.302 665 17.7586C665 20.2152 664.541 22.5239 663.623 24.6845C662.703 26.8451 661.456 28.7246 659.881 30.3228C658.306 31.9211 656.454 33.1861 654.325 34.1179C652.196 35.0508 649.921 35.5172 647.5 35.5172C645.079 35.5172 642.804 35.0508 640.675 34.1179C638.546 33.1861 636.694 31.9211 635.119 30.3228C633.544 28.7246 632.297 26.8451 631.379 24.6845C630.46 22.5239 630 20.2152 630 17.7586ZM633.5 17.7586C633.5 21.7247 634.856 25.0841 637.569 27.8366C640.281 30.5892 643.592 31.9655 647.5 31.9655C651.408 31.9655 654.719 30.5892 657.431 27.8366C660.144 25.0841 661.5 21.7247 661.5 17.7586C661.5 13.7925 660.144 10.4332 657.431 7.6806C654.719 4.92802 651.408 3.55172 647.5 3.55172C643.592 3.55172 640.281 4.92802 637.569 7.6806C634.856 10.4332 633.5 13.7925 633.5 17.7586Z"
+          fill="#61BB79" />
+        <ellipse cx="694.5" cy="3320" rx="9.5" ry="9" fill="#D9D9D9" />
+      </svg>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="section about" id="hakkimizda">
+        <div class="containerr">
+          <div class="about-text">
+            <h1>2004'ten Günümüze...</h1>
+            <p>
+              MEDİSAM Sağlık Sistemleri kurucusu Abdüssamet EVRENSEL, 2004
+              yılından itibaren sağlık sektöründe hizmet vermektedir. Edindiği
+              tecrübelerle PSA oksijen üretim sistemleri, azot jeneratörü, yoğun
+              bakım, ameliyathane, hasta yatak başları ve acil servis ekipmanları
+              olmak üzere geniş bir ürün yelpazesinde gösterdiği başarısıyla güven
+              teşkil etmektedir.
+            </p>
+            <a class="btn btn-primary" href="about.html">DETAYLI BİLGİ</a>
+            <center>
+              <img src="./images/design material_YATAY.png" alt="" />
+            </center>
+          </div>
+
+          <div class="about-img">
+            <img width="50%" height="50%" src="./images/foto1.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid products">
+        <center>
+          <div class="row" style="padding-top: 10%;">
+            <div class="col-md-4">
+              <img src="/images/azot.png" width="50%" alt=""> <br>
+              <br>
+              <br>
+              <p class="product-name"> Oksijen Üretim Sistemleri </p>
+            </div>
+            <div class="col-md-4">
+              <img src="./images/oksijen.png" style="margin-top: -5%;" width="60%" alt="">
+              <br>
+              <br>
+              <p class="product-name"> Azot Üretim Sistemleri </p>
+            </div>
+            <div class="col-md-4" style="padding-top: 2.7%;">
+              <img src="./images/medikal gaz sistemleri.png" width="65%" alt="">
+              <br>
+              <br>
+              <br>
+
+              <p class="product-name"> Medikal Gaz Ekipmanları </p>
+            </div>
+          </div>
+          <img class="araLogo" src="./images/design material1.png" width="50%" alt="">
+        </center>
+
+      </div>
+
+      <section class="section section-4" id="services">
+
+        <div class="section__content" data-content>
+          <div class="container Hizmetlerimiz">
+            <h1 class="second-title hizmetlerimizBaslik">Hizmetlerimiz</h1>
+            <br />
+
+            <div class="row">
+              <!-- circle area start -->
+              <div class="col-md-6 forBtn">
+                <img src="./images/design material.png" class="sliderImg" width="3%" alt="" />
+                <div class="circle-area">
+                  <div id="montaj" class="circle">
+                    <!-- circle -->
+                    <div class="circle-text">
+                      <h3 class="circle-title">Montaj</h3>
+                      <p class="circle-paragraf">
+                        İlgili tüm malzemelerin seçimi ve tüm bu ürünlerin
+                        tesisat montaj işçiliğinin yapılmasını kapsar.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="isletmeye_alma" class="circle">
+                    <!-- circle -->
+                    <div class="circle-text">
+                      <h3 class="circle-title">İşletmeye Alma</h3>
+                      <p class="circle-paragraf">
+                        Teknik servis personeli tarafından gerekli kontroller
+                        sağlanarak, çevre ve çalışma koşullarının uygunluğunun
+                        saptanır ve her türlü ayarlar yapılır.
+                      </p>
+                    </div>
+                  </div>
+                  <br>
+                  <div id="bakim_onarim" class="circle">
+                    <!-- circle -->
+                    <div class="circle-text">
+                      <h3 class="circle-title">Bakım - Onarım</h3>
+                      <p class="circle-paragraf">
+                        Periyodik servis hizmeti sözleşmesi kapsamında,
+                        belirlenen tarihlerde ürünlerin periyodik bakımları
+                        yapılır.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="otomasyon" class="circle">
+                    <!-- circle -->
+                    <div class="circle-text">
+                      <h3 class="circle-title">Otomasyon</h3>
+                      <p class="circle-paragraf">
+                        Medisam medikal uzman mühendis kadrosu ile
+                        müşterilerinin gereksinimlerini kusursuzca analiz
+                        eder.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="egitim" class="circle">
+                    <!-- circle -->
+                    <div class="circle-text">
+                      <h3 class="circle-title">Eğitim</h3>
+                      <p class="circle-paragraf">
+                        Medisam medikal tarafından tedarik edilen tüm
+                        ürünlerin sahada sorunsuz işletilmesi için son
+                        kullanıcılara teknik eğitim verilmektedir.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="circle">
+                    <!-- circle -->
+                    <div id="yedek_parca" class="circle-text">
+                      <h3 class="circle-title">Yedek Parça</h3>
+                      <p class="circle-paragraf">
+                        Yedek parçalara ne zaman ihtiyaç duyulacağını öngörmek
+                        kolay değildir. Bundan dolayı Medisam medikal sık
+                        kullanılan bütün yedek parçaları kendi deposunda
+                        müşterileri için hazır tutar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <br />
+                <button class="btn btn-primary more-info">
+                  DETAYLI BİLGİ
+                </button>
+              </div>
+              <!-- circle area end -->
+
+              <!-- picture area start -->
+              <div class="col-md-6 switch-img-area">
+                <img style="margin-top: 40%" id="switchImgObject" src="./images/HIZMETLER/MONTAJ.png" width="100%"
+                  alt="" />
+              </div>
+              <!-- picture area end -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section__content" data-content>
+        <div class="container sloganDescArea">
+          <center>
+            <h1 class="second-title">Tüm Dünyaya Oksijen İhraç Ediyoruz</h1>
+            <span class="desc-area"> 4 Kıta 28'den fazla ülkede hizmet veriyoruz. Referanslarımız sağlamış olduğumuz
+              hizmetin bir göstergesidir. <br>
+              Her kıtaya gönderdiğimiz ürünlerimiz ve mutlu müşterilerimiz ile her geçen gün sektörümüzde lider olmaya
+              doğru <br> emin adımlar ile
+              ilerliyoruz.
+            </span>
+          </center>
+
+          <div class="row sloganContent">
+            <div class="col-md-2">
+              <img src="./images/design material1.png" class="sloganContentImg" style="margin-top: 250px" width="100%"
+                alt="" />
+            </div>
+            <div class="col-md-10">
+              <img src="./images/world.png" class="worldImg" width="100%" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- çerezler -->
+      <div class="wrapper">
+        <header>
+          <i class="bx bx-cookie"></i>
+          <h2>Çerezler Politikası</h2>
+        </header>
+  
+        <div class="data">
+          <p>Bu siteyi kullanmaya devam ederseniz, bunu kabul ettiğinizi varsayarız. Çerez politikamız ve çerez kullanımı yalnızca kullanıcıların deneyimlerinin iyileştirilmesi için
+            kullanılıyor olup, kişisel verilerinizin en üst düzeyde güvenliğinin sağlandığını şirketimiz adına
+            beyan ederiz. <a target="_blank" href="./e-katalog/Medisam Cerezler.pdf"> Daha Fazla...</a></p>
+        </div>
+  
+        <div class="buttons">
+          <button class="button" id="acceptBtn">Tamam</button>
+          <!-- <button class="button" id="declineBtn">Reddet</button> -->
+        </div>
+      </div>
+  
+
+      <footer>
+        <div class="row">
+          <div class="col-md-4 quik-links">
+            <!-- quık links -->
+            <div class="quik-links-area">
+              <div class="row">
+                <div class="col-md-4 leftLinks">
+                  <a class="footerLink" href="#about">Hakkımızda</a> <br />
+                  <a class="footerLink" href="#products">Ürünler</a>
+                </div>
+                <div class="col-md-4 rightLinks">
+                  <a class="footerLink" href="#services">Hizmetler</a>
+                  <br />
+                  <a class="footerLink" href="#contact">İletişim Bilgileri</a>
+                  <a class="footerLink" target="_blank" href="./e-katalog/Medisam Cerezler.pdf">Çerez Politikası</a>
+                </div>
+
+              </div>
+              <br>
+              <br>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 social-area">
+            <!-- social icons -->
+            <span class="social-icon"> <a href="https://www.instagram.com/oxyworld.psa/" target="_blank" style="text-decoration: none; color: white;"><i class="bi bi-instagram"></i></a></span>
+            <span class="social-icon"> <a href="https://www.linkedin.com/company/oxyworldpsa/?originalSubdomain=tr" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-linkedin"></i></a></span>
+            <span class="social-icon"> <a href="https://www.youtube.com/channel/UCYQF4VtEyWX5mjKlQZPujJw" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-youtube"></i></a></span>
+            <span class="social-icon">  <a href="https://twitter.com/OxyworldPSA" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-twitter"></i> </a></span>
+            <span class="social-icon"> <a href="https://www.facebook.com/oxyworldpsa" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-facebook"> </a></i></span> 
+          </div>
+
+          <div class="col-md-4 footer-desc-area">
+            <!-- footer contact info -->
+            <div class="footer-desc">
+              <h5>Medisam Medikal</h5>
+              <p class="footer-adress-paragraf">
+                Saraykent Sanayi sitesi, saray mahallesi, 40. sokak NO:10
+                Kahramankazan / Ankara
+              </p>
+              <a class="footerLink" href="tel:0312 395 04 44">0312 395 04 44</a><br />
+              <a class="footerLink" href="mailto:info@medisammedikal.com">info@medisammedikal.com</a>
+            </div>
+          </div>
+        </div>
+        <br />
+      </footer>
+    </div>
+    <!-- copyright bar start -->
+
+    <div class="copyright">Tüm Hakları Saklıdır. <img src="./images/Marka-Brand-Logo.png" width="5%" alt=""></div>
+
+    <!-- copyright bar end -->
+
+
+
+<!-- cerezler -->
+<script src="./js/cerezler.js"></script>
+
+    <script>
+      // set height of the svg path as constant
+      const svg = document.getElementById("svgPath");
+      const svgYuksekCozunurluk = document.getElementById("svgPathYuksekCozunurluk");
+      const length = svg.getTotalLength();
+      const lengthYuksekCozunurluk = svgYuksekCozunurluk.getTotalLength();
+
+      // start positioning of svg drawing
+      svg.style.strokeDasharray = length;
+      svgYuksekCozunurluk.style.strokeDasharray = lengthYuksekCozunurluk;
+
+      // hide svg before scrolling starts
+      svg.style.strokeDashoffset = length;
+      svgYuksekCozunurluk.style.strokeDashoffset = lengthYuksekCozunurluk;
+
+      window.addEventListener("scroll", function () {
+        const scrollpercent =
+          ((document.body.scrollTop * 2 + document.documentElement.scrollTop) /
+            (document.documentElement.scrollHeight -
+              document.documentElement.clientHeight) /
+            1.4) *
+          1.5;
+
+        const draw = length * scrollpercent;
+
+        // Reverse the drawing when scroll upwards
+        svg.style.strokeDashoffset = length - draw;
+        svgYuksekCozunurluk.style.strokeDashoffset = lengthYuksekCozunurluk - draw;
+      });
+    </script>
+
+    <script>
+      var container3 = document.querySelector("body");
+      changeWheelSpeed(container3, 2.0);
+    </script>
+
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <!-- <script src="./js/scroller.js"></script>  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </div>
+
+  <script>
+    // google chrome
+    window.addEventListener('wheel', function (e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+  </script>
+
+  <script>
+    // firefox
+    window.addEventListener('wheel', function (e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    }, { passive: false, capture: true });
+
+  </script>
+
+  <script>
+    // safari
+    document.addEventListener('wheel', function (e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+  </script>
+
+  <script>
+    // Sağ tıklama olayını dinlemek için bir fonksiyon oluşturun
+    function disableRightClick(e) {
+      e.preventDefault();
+    }
+
+    // Sağ tıklama olayını belge üzerinde dinleyin
+    document.addEventListener('contextmenu', disableRightClick);
+  </script>
+
+
+  <!--  <script>
+$(document).keydown(function (event) {
+    if (event.keyCode == 123) { // Prevent F12
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+        return false;
+    }
+});
+  </script>  -->
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
